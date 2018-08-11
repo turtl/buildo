@@ -1,0 +1,5 @@
+target/release/libturtl_core.so:
+	ln -s /builder/out/libturtl_core.linux64.so $@
+
+release: target/release/libturtl_core.so
+

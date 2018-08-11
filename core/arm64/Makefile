@@ -1,9 +1,9 @@
 .PHONY: all clean run
 
 # ------------------------------------------------------------------------------
-NAME := core/linux64
+NAME := core/arm64
 VERSION := 1
-OUTFILE := libturtl_core.linux64.so
+OUTFILE := libturtl_core.arm64.so
 # ------------------------------------------------------------------------------
 
 -include ../common.mk

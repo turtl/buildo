@@ -1,9 +1,9 @@
 .PHONY: all clean run
 
 # ------------------------------------------------------------------------------
-NAME := core/linux64
+NAME := desktop/linux32
 VERSION := 1
-OUTFILE := libturtl_core.linux64.so
+OUTFILE := turtl-linux32.tar.bz2
 # ------------------------------------------------------------------------------
 
 -include ../common.mk

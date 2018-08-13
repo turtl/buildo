@@ -16,7 +16,7 @@ $(BUILD)/dockerbuild: Dockerfile
 	touch $@
 
 run:
-	docker run --rm -it -e OUTFILE=$(OUTFILE) -v /home/andrew/dev/turtl/build/target:/builder/out turtl-build/$(NAME):v$(VERSION)
+	docker run --rm -e OUTFILE=$(OUTFILE) -v /home/andrew/dev/turtl/build/target:/builder/out turtl-build/$(NAME):v$(VERSION)
 
 clean:
 	rm -rf $(BUILD)

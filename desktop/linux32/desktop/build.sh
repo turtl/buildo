@@ -25,6 +25,7 @@ mkdir -p target/release/
 cd ../js
 git pull
 npm install
+cp config/config.js.default config/config.js
 cd ../desktop
 git pull
 npm install

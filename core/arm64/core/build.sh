@@ -19,6 +19,11 @@ cd core
 git pull
 cp /builder/core/vars.mk .
 
+BUILD_TYPE="release"
+if [ "${DEBUG}" == "1" ]; then
+	BUILD_TYPE="all"
+fi
+
 export PATH=$PATH:/opt/gcc-arm64-android/bin
 make \
     SODIUM_LIB_DIR=/opt/libsodium/aarch64-linux-android/lib \
@@ -26,7 +31,7 @@ make \
     OPENSSL_INCLUDE_DIR=/opt/openssl/aarch64-linux-android/include \
     CARGO_BUILD_ARGS="${CARGO_BUILD_ARGS} --target aarch64-linux-android" \
     FEATURES="build-jni sqlite-static" \
-    release
+	${BUILD_TYPE}
 
 if [ "${OUTFILE}" != "" ]; then
 	echo "- Copy ${TARGET} -> ${OUTFILE}"

@@ -24,5 +24,6 @@ ADD core core
 # this caches a lot of the core junk
 RUN ./core/build.sh
 ENV OUTFILE=libturtl_core.so
+ENV DEBUG=""
 CMD ./core/build.sh "/builder/out/${OUTFILE}"
 

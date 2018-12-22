@@ -5,7 +5,7 @@ This is a collection of Makefiles and Dockerfiles to build Turtl
 because they require special hardware or licenses. I build on these platforms
 manually, with custom scripts.
 
-Supported targets/platforms:
+### Supported targets/platforms:
 
 - core
   - android arm64
@@ -16,7 +16,7 @@ Supported targets/platforms:
   - linux x64
   - linux x32
 
-Missing:
+### Missing:
 
 - core
   - windows x64

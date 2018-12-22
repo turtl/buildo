@@ -14,7 +14,7 @@ ADD openssl openssl
 RUN ./openssl/build.sh
 ADD rustup.sh .
 RUN chmod 755 rustup.sh && \
-	./rustup.sh -y --default-toolchain 1.28.0 --default-host i686-unknown-linux-gnu
+	./rustup.sh -y --default-toolchain 1.31.0 --default-host i686-unknown-linux-gnu
 ADD core core
 # this caches a lot of the core junk
 RUN ./core/build.sh
